@@ -1,10 +1,6 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-
+import { Link, } from 'react-router-dom'
 
 function Navbar() {
- 
-  
 
   return (
     <>
@@ -14,11 +10,9 @@ function Navbar() {
 
             <div className='flex gap-4'>
             <Link to='/home' className='hover:underline'>Home</Link>
-              <div className='hover:underline'>Home</div>
-              <div className='hover:underline'>Categoria</div>
-              <div className='hover:underline'>Cadastrar categoria</div>
+            <Link to='/categorias' className='hover:underline'>Categoria</Link>
+              <Link to='/categorias/criar' className='hover:underline'>Cadastrar Categoria</Link>
               <div className='hover:underline'>Produto</div>
-              <div className='hover:underline'>Sair</div>
             </div>
           </div>
         </div>
